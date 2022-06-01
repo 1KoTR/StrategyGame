@@ -20,7 +20,7 @@ public class MouseInteractionsPresenter : MonoBehaviour
         var selectable = hits
             .Select(hit => hit.collider.GetComponentInParent<ISelectable>())
             .Where(c => c != null)
-            .LastOrDefault();
+            .FirstOrDefault();
         _selectedObject.SetValue(selectable);
     }
 }

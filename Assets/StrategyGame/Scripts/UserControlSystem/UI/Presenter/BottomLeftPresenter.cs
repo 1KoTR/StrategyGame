@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class BottomLeftPresenter : MonoBehaviour
 {
-    [SerializeField] private Outline _outline;
     [SerializeField] private Image _selectedImage;
     [SerializeField] private Slider _healthSlider;
     [SerializeField] private TextMeshProUGUI _text;
@@ -20,17 +19,11 @@ public class BottomLeftPresenter : MonoBehaviour
 
     private void OnSelected(ISelectable selected)
     {
-        if (_outline != null)
-        {
-            _outline.enabled = false;
-            _outline = null;
-        }
         _selectedImage.enabled = selected != null;
         _healthSlider.gameObject.SetActive(selected != null);
         _text.enabled = selected != null;
         if (selected != null)
         {
-            (_outline = selected.Outline).enabled = true;
             _selectedImage.sprite = selected.Icon;
             _text.text = $"{selected.Health}/{selected.MaxHealth}";
             _healthSlider.minValue = 0;
