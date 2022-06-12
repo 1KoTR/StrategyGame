@@ -5,14 +5,7 @@ using UnityEngine;
     fileName = nameof(SelectableValue), 
     menuName = "Strategy Game/" + nameof(SelectableValue), 
     order = 0)]
-public class SelectableValue : ScriptableObject
+public class SelectableValue : ValueBase<ISelectable>
 {
-    public ISelectable CurrentValue { get; private set; }
-    public Action<ISelectable> OnSelected;
 
-    public void SetValue(ISelectable value)
-    {
-        CurrentValue = value;
-        OnSelected?.Invoke(value);
-    }
 }

@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OutlineExecutorPresenter : MonoBehaviour
 {
     [SerializeField] private SelectableValue _selectedObject;
 
-    [SerializeField] private OutlineExecutor _outlineExecutor;
+    private OutlineExecutor _outlineExecutor;
     private ISelectable _currentSelectedObject;
 
     private void Start()
     {
-        _selectedObject.OnSelected += OnSelected;
+        _selectedObject.OnNewValue += OnSelected;
         OnSelected(_selectedObject.CurrentValue);
     }
 
@@ -28,7 +26,7 @@ public class OutlineExecutorPresenter : MonoBehaviour
         }
         if (_currentSelectedObject != null)
         {
-            _outlineExecutor = (selectedObject as Component).GetComponentInParent<OutlineExecutor>();
+            _outlineExecutor = (selectedObject as Component).GetComponent<OutlineExecutor>();
             _outlineExecutor.enabled = true;
         }
     }

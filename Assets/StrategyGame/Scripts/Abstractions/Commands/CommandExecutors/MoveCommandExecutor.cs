@@ -6,6 +6,6 @@ public class MoveCommandExecutor : CommandExecutorBase<IMoveCommand>
 {
     public override void ExecuteSpecificCommand(IMoveCommand command)
     {
-        print($"{name} move!");
+        print($"{name} is moving to {command.Target}!");
     }
 }
