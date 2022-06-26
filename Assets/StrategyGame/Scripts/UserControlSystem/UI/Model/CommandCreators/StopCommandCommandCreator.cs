@@ -5,7 +5,7 @@ public class StopCommandCommandCreator : CommandCreatorBase<IStopCommand>
 {
     [Inject] AssetsContext _context;
 
-    protected override void ClassSpecificCommandCreation(Action<IStopCommand> creationCallback)
+    protected override void classSpecificCommandCreation(Action<IStopCommand> creationCallback)
     {
         creationCallback?.Invoke(_context.Inject(new StopCommand()));
     }

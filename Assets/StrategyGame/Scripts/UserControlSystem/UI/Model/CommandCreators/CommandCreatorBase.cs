@@ -6,11 +6,11 @@ public abstract class CommandCreatorBase<T> : ICommand
     {
         var classSpecificExecutor = commandExecutor as CommandExecutorBase<T>;
         if (classSpecificExecutor != null)
-            ClassSpecificCommandCreation(callback);
+            classSpecificCommandCreation(callback);
         return commandExecutor;
     }
 
-    protected abstract void ClassSpecificCommandCreation(Action<T> creationCallback);
+    protected abstract void classSpecificCommandCreation(Action<T> creationCallback);
 
     public virtual void ProcessCancel() { }
 }
