@@ -13,6 +13,5 @@ public class MenuPresenter : MonoBehaviour
     {
         _backButton.OnClickAsObservable().Subscribe(_ => gameObject.SetActive(false));
         _exitButton.OnClickAsObservable().Subscribe(_ => Application.Quit());
-
     }
 }
