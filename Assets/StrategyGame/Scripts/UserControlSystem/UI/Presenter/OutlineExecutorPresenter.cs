@@ -1,16 +1,18 @@
+using System;
 using UnityEngine;
+using UniRx;
+using Zenject;
 
 public class OutlineExecutorPresenter : MonoBehaviour
 {
-    [SerializeField] private SelectableValue _selectedObject;
+    [Inject] private IObservable<ISelectable> _selectedObject;
 
     private OutlineExecutor _outlineExecutor;
     private ISelectable _currentSelectedObject;
 
     private void Start()
     {
-        _selectedObject.OnNewValue += OnSelected;
-        OnSelected(_selectedObject.CurrentValue);
+        _selectedObject.Subscribe(OnSelected);
     }
 
     private void OnSelected(ISelectable selectedObject)
