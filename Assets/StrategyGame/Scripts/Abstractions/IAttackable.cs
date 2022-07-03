@@ -1,4 +1,4 @@
-public interface IAttackable : IHealth
+public interface IAttackable : IHealthHolder
 {
 
 }

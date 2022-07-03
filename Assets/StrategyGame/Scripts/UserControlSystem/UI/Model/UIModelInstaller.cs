@@ -20,6 +20,8 @@ public class UIModelInstaller : MonoInstaller
         Container.Bind<CommandCreatorBase<IStopCommand>>().To<StopCommandCommandCreator>().AsTransient();
 
         Container.Bind<CommandButtonsModel>().AsSingle();
-    }
 
+        Container.Bind<float>().WithId("Cubik").FromInstance(5f);
+        Container.Bind<string>().WithId("Cubik").FromInstance("Cubik");
+    }
 }

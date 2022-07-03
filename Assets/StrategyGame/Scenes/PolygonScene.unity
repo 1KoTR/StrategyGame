@@ -438,7 +438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161c4b8bb25086a4d9bb39be41933955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectable: {fileID: 11400000, guid: 3e458b2452c8f8a498b163b64434a97b, type: 2}
   _view: {fileID: 233544010}
 --- !u!1 &233093342
 GameObject:
@@ -2676,6 +2675,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 13363082}
     m_Modifications:
+    - target: {fileID: 2147096771, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
+      propertyPath: m_Radius
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147096771, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6470169136397608347, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
       propertyPath: m_Name
       value: Cubik
@@ -2724,10 +2731,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8893497428761526602, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
-      propertyPath: _stopCommandExecutor
-      value: 
-      objectReference: {fileID: 2147096770}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
 --- !u!1 &1300167292
@@ -2989,7 +2992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6592f759ba52c31438fefff33e64f0cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectedObject: {fileID: 11400000, guid: 3e458b2452c8f8a498b163b64434a97b, type: 2}
 --- !u!1001 &1496437493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3481,7 +3483,6 @@ MonoBehaviour:
   _text: {fileID: 471684491}
   _sliderBackground: {fileID: 148189394}
   _sliderFillImage: {fileID: 642125444}
-  _selectedValue: {fileID: 11400000, guid: 3e458b2452c8f8a498b163b64434a97b, type: 2}
 --- !u!1 &1515828815
 GameObject:
   m_ObjectHideFlags: 0
@@ -5678,17 +5679,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8359093157927722119, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
   m_PrefabInstance: {fileID: 1274651977}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2147096770 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2767954953237492933, guid: cd62f20fa09fad7479f2318e88ae330e, type: 3}
-  m_PrefabInstance: {fileID: 1274651977}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10f2d94e00e68846907397971d0e714, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4145099930588174339
 PrefabInstance:
   m_ObjectHideFlags: 0

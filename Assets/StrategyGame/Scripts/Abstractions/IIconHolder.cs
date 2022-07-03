@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IHealth
+public interface IIconHolder
 {
-    float Health { get; }
-    float MaxHealth { get; }
+    Sprite Icon { get; }
 }
