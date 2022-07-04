@@ -14,6 +14,7 @@ public class UnitProductionTask : IUnitProductionTask
     {
         Icon = icon;
         TimeLeft = time;
+        ProductionTime = time;
         UnitPrefab = gameObject;
         UnitName = unitName;
     }

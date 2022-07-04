@@ -1,13 +1,11 @@
 {
-    "name": "UIPresenter",
+    "name": "UIModel",
     "rootNamespace": "",
     "references": [
-        "GUID:6c70f399972fa2d438048911833d1dd2",
-        "GUID:1e5cc8421e6574747a9819c2923405fc",
         "GUID:3474eb67d97a08240b9248a95e9b9b3a",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f",
-        "GUID:abb9007368a921b49a9af9bbbb2a8e37",
         "GUID:2d6207cb70c81ae4cb6b6925207c6f97",
+        "GUID:abb9007368a921b49a9af9bbbb2a8e37",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
         "GUID:560b04d1a97f54a4e82edc0cbbb69285"
     ],
     "includePlatforms": [],
