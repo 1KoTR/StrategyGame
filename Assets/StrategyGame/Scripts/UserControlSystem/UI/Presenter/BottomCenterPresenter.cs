@@ -50,9 +50,4 @@ public class BottomCenterPresenter : MonoBehaviour
             }
         });
     }
-
-    private void Init2(BottomCenterModel model, BottomCenterView view)
-    {
-        
-    }
 }

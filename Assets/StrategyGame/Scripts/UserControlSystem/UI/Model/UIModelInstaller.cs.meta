@@ -3,7 +3,8 @@ guid: a3efa21d5b4b05c479ffe209391d2edf
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _cubikSprite: {fileID: 21300000, guid: 7226091479ef17540b82187a06a7c19d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
